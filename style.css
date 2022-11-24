@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 1;
+}
+
+body {
+
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    padding: 0px 12px 0px 12px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+      
+      }
+      
+      .konten {
+          border: solid 2px rgba(255, 255, 255, 0.397);
+          border-radius: 10px;
+          background-color: rgba(255, 255, 255, 0.397);
+          margin-left: 400px;
+          margin-right: 400px ;
+          margin-top: 50px;
+          padding-bottom: 25px;
+      }
+
+      #isi {
+        display: none;
+        padding: 12px;
+        margin-top: 18px;
+        margin-left: 300px;
+        margin-right: 300px;
+        font-size: 24px;
+        color: beige;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.267);
+        margin-bottom: 50px;
+        animation: fadein 2s;
+      }
+
+      @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+
+      @-moz-keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-webkit-keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-o-keyframes fadein { 
+        from {
+            opacity:0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+      .nembak {
+        margin-top: 10px;
+      }
+
+      .hug {
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+.tap{
+
+    margin-bottom: 8px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.tap:hover,
+.tap:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #FF4742;
+  border: 1px solid white;
+}
+
+.tap:active {
+  opacity: .5;
+}
+
+
+#tapp {
+    display: flex;
+    justify-content: center;
+
+}
+ 
+
+#myAudio {
+    display: none;
+}
+
+  
+  .background {
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.482);
+  }
+  
+  body.open .background {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @keyframes modal-in {
+    0% {
+      translate: -50% 10%;
+      scale: 0.5;
+    }
+    100% {
+      opacity: 1;
+      scale: 1;
+      visibility: visible;
+    }
+  }
+  
+  .page-content,
+  .modal,
+  .background {
+    transition: 0.5s;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #e26a6a;
+    color: #f9f9f9;
+    padding: 48px 40px;
+    width: 300px;
+    border-radius: 12px;
+    translate: -50% -50%;
+    scale: 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  body.open > .page-content {
+    scale: 0.75;
+  }
+  
+  body.open .modal {
+    opacity: 1;
+    visibility: visible;
+    animation: modal-in 0.5s;
+  }
+  
+  h2 {
+    margin: 0 0 8px;
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  #date {
+    color: yellow;
+    font-weight: 600;
+    margin-top: -30px;
+  }
+
+  .button-3 {
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 5px;
+  }
+  
+  .button-3:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .button-3:hover {
+    background-color: #f7f7f7;
+    color: black;
+  }
+  
+  .button-3:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  .button-3:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  .button-3:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+
+  
+  .button-4 {
+    appearance: none;
+    background-color: #dada39;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 5px;
+  }
+  
+  .button-4:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  
+  .button-4:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  .button-4:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  .button-4:active {
+    background-color: #dada39;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+  
+@media only screen and (min-width: 200px) and (max-device-width: 768px) {
+
+    *{
+        margin: 0;
+    }
+   
+    h1 {
+        font-size: 22px;
+        margin-top: 25px;
+        padding: 0px 12px 0px 12px;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+
+    .konten {
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .img {
+        width: 80%;
+    }
+
+    #isi {
+        padding: 10px;
+        font-size: 18px;
+        margin: 12px 30px;
+
+    }
+   
+    .tap {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .modal {
+        padding: 25px 20px;
+        
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    .hug {
+      width: 50%;
+    }
+
+    #date {
+      margin-top: 0px;
+    }
+
+    .button-3{
+      padding: 6px 16px;
+    }
+
+    .button-4 {
+      padding: 6px 16px;
+    }
+    .asik {
+      letter-spacing: 1px;
+    }
+}

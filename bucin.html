@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untuk Kamu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <header>
+    <div class="konten">
+      <div class="foto"><img src="love.gif" alt="" /></div>
+    </div>
+  </header>
+
+  <body>
+    <h1>Aku mau jujur ke kamu</h1>
+
+    <div id="tapp">
+      <button id="gas" class="tap" onclick="mainkan()">Pencet ini</button>
+      <audio id="audio" src="foundyou.mp3"></audio>
+    </div>
+
+    <div id="isi">
+      <p>
+        Sebenernya dari dulu aku suka sama kamu, tapi aku gaberani ungakapinnya
+        ke kamu..
+      </p>
+
+      <p class="nembak">Kamu mau ga sama aku?</p>
+
+      <br />
+
+      <button class="button-3" onclick="toggleModal()" role="button">
+        Terima
+      </button>
+      <audio id="yeay" src="terima.mp3"></audio>
+      <button id="tolak" class="button-4">Tolak</button>
+
+      <div class="background" onclick="toggleModal()"></div>
+      <div class="modal">
+        <img src="" alt="" />
+        <h2>Yessss</h2>
+        <img class="hug" src="hug.gif" alt="" />
+        <p class="asik">
+          Makasih ya udah mau nerima aku, berarti tanggal jadian kita..
+        </p>
+        <br />
+        <p id="date"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
